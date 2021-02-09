@@ -1,96 +1,99 @@
 * {
-    margin:0;
-    padding:0;
+  margin: 0;
+  padding: 0;
 }
 
-html,body{
-    font-family: "calibri", "sans-serif";
-    height: 100%;
-    width: 100%;
+html,
+body {
+  font-family: "calibri", "sans-serif";
+  height: 100%;
+  width: 100%;
 }
 
-/* From here starts the cameraScreen css */
-.Wrapper{
-    display: flex;
-    background-color: #21242b;
-    height: auto;
-    border-radius: 6%;
-    height: 100%;
-    width: 100%;
+.Wrapper {
+  display: flex;
+  background-image: linear-gradient(#654ea3, #eaafc8);
+  height: auto;
+  height: 100%;
+  width: 100%;
 }
 /*Main Container contains small containers and text of the screen*/
-.Wrapper .mainContainer{
-    width: 85%;
-    margin: 40px auto;
-    border-bottom: solid #21242b 14px;
-    display: grid;
-    grid-template-rows: 50px 260px 260px;
-    grid-template-columns: repeat(auto-fill ,minmax(10rem,25rem));
-    grid-gap: 40px;
-    justify-content: center;
-    overflow: scroll;
+.Wrapper .mainContainer {
+  width: 85%;
+  margin: 40px auto;
+  border-bottom: solid white 20px;
+  display: grid;
+  grid-template-rows: 70px 260px 260px;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 25rem));
+  grid-gap: 50px;
+  justify-content: center;
+  overflow: scroll;
 }
 
-.Wrapper .mainContainer::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+.Wrapper .mainContainer::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 
 /*The Heading full-container*/
-.mainContainer h3{
-    font-family: 'calibri';
-    font-size: 50px;
-    font-style: italic;
-    text-align: center;
-    color:#8ac285;
-    grid-column: 1/-1;
+.mainContainer h3 {
+  font-family: "calibri";
+  font-size: 50px;
+  font-style: italic;
+  text-align: center;
+  color: #400040;
+  grid-column: 1/-1;
+  border-radius: 6%;
+  background-color: white;
 }
-@media screen and (max-width: 788px){
-.mainContainer h3{
-    font-size: 32px;
-}
+@media screen and (max-width: 788px) {
+  .mainContainer h3 {
+    font-size: 40px;
+  }
 }
 
-/*The camera containers*/
+/*The image containers*/
 .container {
-    background-color:#21242b;
-    height: 260px;
+  background-color: white;
+  height: 260px;
 }
-@media screen and (min-width: 1612px){
-.container {
+@media screen and (min-width: 1612px) {
+  .container {
     width: 400px;
     height: 200px;
-}}
-
-.cam-box.one img{
-    width:400px;
-    height: 200px;
-}
-.cam-box.two img{
-    width:100%;
-    height:100%;
-}
-.cam-box.three img{
-    max-width:100%;
-    height: auto;
-}
-.cam-box.four img{
-    max-width:100%;
-    height: auto;
-}
-.cam-box.five img{
-    max-width:100%;
-    height: auto;
-}
-.cam-box.six img{
-    max-width:100%;
-    height: auto;
+  }
 }
 
-.container h3{
-    background-color: #21242b;
-    font-family: 'calibri';
-    font-size: 20px;
-    font-style: italic;
-    color: white;
-    text-align: start;
+.cam-box.one img {
+  width: 400px;
+  height: 200px;
+}
+.cam-box.two img {
+  width: 100%;
+  height: 100%;
+}
+.cam-box.three img {
+  max-width: 100%;
+  height: auto;
+}
+.cam-box.four img {
+  max-width: 100%;
+  height: auto;
+}
+.cam-box.five img {
+  max-width: 100%;
+  height: auto;
+}
+.cam-box.six img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container h3 {
+  /*background-color: black;*/
+  background-image: linear-gradient(#d3cce3, #e9e4f0);
+  font-family: "calibri";
+  font-size: 20px;
+  font-style: italic;
+  color: black;
+  text-align: start;
 }
